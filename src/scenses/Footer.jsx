@@ -20,10 +20,10 @@ const Footer = () => {
             </a>
             <a
               className="flex font-semibold transition duration-150 hover:text-orange-500"
-              href="mailto:Gyming@gmail.com"
+              href="mailto:Gyming-gym@gmail.com"
             >
               <IconMail />
-              &nbsp;Gyming@gmail.com
+              &nbsp;Gyming-gym@gmail.com
             </a>
             <a
               target="_blank"
