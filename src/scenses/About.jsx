@@ -1,10 +1,9 @@
-import React from "react";
 import Program from "../components/Program";
 
 function About() {
   return (
     <section>
-      <div className="flex flex-col items-center mt-14">
+      <div className="flex flex-col items-center my-14">
         <h1 className="text-3xl font-semibold mt-36 text-center">
           CHOOSE <span className="text-orange-500">PROGRAM</span>
         </h1>
@@ -17,7 +16,7 @@ function About() {
           Welcome to the world of fitness! we're here to help you find the
           perfect workout program to achieve your goals.
         </p>
-        <div className="sm:grid sm:grid-cols-2 sm:gap-x-40 sm:gap-y-6 mt-20">
+        <div className="sm:grid sm:grid-cols-2 sm:gap-x-36 sm:gap-y-6 mt-20">
           <Program
             title="Beginner's Blend"
             program="A foundational mix of strength, flexibility, and cardio exercises for a well-rounded fitness start."

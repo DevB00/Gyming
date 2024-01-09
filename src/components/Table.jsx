@@ -1,75 +1,110 @@
-import React from "react";
-
-const Table = () => {
+import { twMerge } from "tailwind-merge";
+const Table = ({ Day = "Monday" }) => {
   return (
     <table className="border-collapse border-[1px] border-white mx-4">
       <tbody>
         <tr>
-          <th className="border-[1px] border-white py-12 px-1 sm:px-6 md:px-16">
-            Header 1
+          <th className="border-[1px] border-white py-12 px-1 sm:px-8 md:px-16">
+            Fitness Class
           </th>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 1, Col 1
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16  text-white transition-all duration-700 font-semibold`,
+              `${
+                Day === "Monday" || Day === "Friday"
+                  ? "text-opacity-100"
+                  : "text-opacity-0"
+              }`
+            )}
+          >
+            10:00AM - 11:30AM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 1, Col 2
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16 text-white transition-all duration-700 font-semibold`,
+              `${Day === "Tuesday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            2:00PM - 3:30PM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 1, Col 3
-          </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 1, Col 4
+          <td className="border-[1px] border-white px-1 sm:px-8 md:px-16">
+            William G. Stewart
           </td>
         </tr>
         <tr>
-          <th className="border-[1px] border-white py-12 px-1 sm:px-6 md:px-16">
-            Header 2
+          <th className="border-[1px] border-white py-12 px-1 sm:px-8 md:px-16">
+            Muscle Training
           </th>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 2, Col 1
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16 text-white transition-all duration-700 font-semibold`,
+              `${Day === "Thursday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            10:00AM - 11:30AM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 2, Col 2
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16  text-white transition-all duration-700 font-semibold`,
+              `${Day === "Wednesday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            2:00PM - 3:30PM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 2, Col 3
-          </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 2, Col 4
+          <td className="border-[1px] border-white px-1 sm:px-8 md:px-16">
+            Paul D. Newman
           </td>
         </tr>
         <tr>
-          <th className="border-[1px] border-white py-12 px-1 sm:px-6 md:px-16">
-            Header 3
+          <th className="border-[1px] border-white py-12 px-1 sm:px-8 md:px-16">
+            Body Building
           </th>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 3, Col 1
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16  text-white transition-all duration-700 font-semibold`,
+              `${Day === "Tuesday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            10:00AM - 11:30AM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 3, Col 2
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16 text-white transition-all duration-700 font-semibold`,
+              `${
+                Day === "Monday" || Day === "Friday"
+                  ? "text-opacity-100"
+                  : "text-opacity-0"
+              }`
+            )}
+          >
+            2:00PM - 3:30PM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 3, Col 3
-          </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 3, Col 4
+          <td className="border-[1px] border-white px-1 sm:px-8 md:px-16">
+            Boyd C. Harris
           </td>
         </tr>
         <tr>
-          <th className="border-[1px] border-white py-12 px-1 sm:px-6 md:px-16">
-            Header 4
+          <th className="border-[1px] border-white py-12 px-1 sm:px-8 md:px-16">
+            Yoga Training Class
           </th>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 4, Col 1
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16 text-white transition-all duration-700 font-semibold`,
+              `${Day === "Wednesday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            10:00AM - 11:30AM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 4, Col 2
+          <td
+            className={twMerge(
+              `border-[1px] border-white px-1 sm:px-8 md:px-16 text-white transition-all duration-700 font-semibold`,
+              `${Day === "Thursday" ? "text-opacity-100" : "text-opacity-0"}`
+            )}
+          >
+            2:00PM - 3:30PM
           </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 4, Col 3
-          </td>
-          <td className="border-[1px] border-white px-1 sm:px-6 md:px-16">
-            Row 4, Col 4
+          <td className="border-[1px] border-white px-1 sm:px-8 md:px-16">
+            Hector T. Daigle
           </td>
         </tr>
       </tbody>
