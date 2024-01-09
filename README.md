@@ -1,6 +1,6 @@
 <h1>About the project</h1>
 
- <p>A <b>fitness center</b> website is an online platform designed to help individuals achieve their fitness goals. The website offers a user-friendly interface for browsing, comparing, and scheduling gym sessions. Users can explore a diverse range of fitness classes, yoga, strength training, and more. The platform also provides information on experienced instructors,and class schedules to cater to various preferences and fitness levels.</p>
+ <p>A <b>fitness center</b> to help individuals achieve their fitness goals. The website offers a user-friendly interface for browsing, and scheduling gym sessions. Users can explore a diverse range of fitness classes, yoga, strength training, and more. The platform also provides information on class schedules to cater to various preferences and fitness levels.</p>
 
 <p>Credits for the design goes to <a href='https://themewagon.com/'>Design by ThemeWagon</a></p>
 
