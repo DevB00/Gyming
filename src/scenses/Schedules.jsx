@@ -25,7 +25,7 @@ const Schedules = () => {
           Check out our class schedule below and plan your fitness journey with
           us.
         </p>
-        <div className="mt-12 flex-col flex gap-8">
+        <div className="mt-12 flex-col flex gap-8 px-2">
           <div className="justify-center gap-4 flex flex-wrap">
             {daysOfWeek.map((dayOfWeek) => (
               <div className="flex">

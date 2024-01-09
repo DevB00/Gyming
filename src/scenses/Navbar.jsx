@@ -41,7 +41,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
     <nav
       className={`${navbarColor}  transition duration-300 ease-in-out z-40 w-full fixed top-0 py-6`}
     >
-      <div className="flex items-center mx-auto justify-between w-5/6">
+      <div className="flex items-center mx-auto gap-8 justify-between w-5/6">
         <h4 className={`text-4xl font-bold ${textColor}`}>Gyming</h4>
         {isAboveSmallScreens ? (
           <Scrollspy
